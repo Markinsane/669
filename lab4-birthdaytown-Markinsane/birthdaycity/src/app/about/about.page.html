@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About Me</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-item>
+      <ion-label>First Name:</ion-label>
+      <ion-input [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+
+ <ion-item>
+  <ion-label>Your Birthday</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+</ion-item>
+
+<ion-button (click)="Previous()">PREVIOUS</ion-button>
+<ion-button (click)="Next()">Next</ion-button>
+
+
+  <h2>
+    Hello, {{ firstName }}
+  </h2>
+
+</ion-content>

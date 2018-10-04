@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Confirmation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+ <h2>
+    Almost Done 
+  </h2>
+
+
+ <h5>
+    Confirm Details
+ </h5>
+
+
+ <ul>
+    <li>Name:{{ firstName }} </li>
+    <li>Birthday: {{ myDate }} </li>
+    <li>Cake:{{ types }} {{ frostings }} </li>
+
+ </ul>
+
+<ion-button (click)="Previous()">Previous</ion-button>
+<ion-button (click)="Next()">Finish</ion-button>
+
+
+</ion-content>

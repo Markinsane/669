@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Cake</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+	<label class = "item item-input item-select">
+	   <div class = "input-label">
+	      Type
+	   </div>
+		
+	   <select [(ngModel)]="types">
+	      <option>Vanila</option>
+	      <option selected>Straberry</option>
+	      <option>Mint</option>
+	   </select>
+	 </label>
+
+
+
+	<label class = "item item-input item-select">
+	   <div class = "input-label">
+	      Frosting
+	   </div>
+		
+	   <select [(ngModel)]="frostings">
+	      <option>Choclate</option>
+	      <option selected>Honey</option>
+	      <option>Candy</option>
+	   </select>
+	 </label>
+
+
+  <ion-item>
+    <ion-label>Glutin Free</ion-label>
+    <ion-toggle [(ngModel)]="glutenFree"></ion-toggle>
+  </ion-item>
+
+
+<ion-button (click)="Previous()">Previous</ion-button>
+<ion-button (click)="Next()">Next</ion-button>
+
+
+
+
+
+<!--  <h2>
+    Hello, {{ firstName }} {{ myDate }} {{ glutenFree }} {{ types }} {{ frostings }} 
+  </h2>
+ -->
+
+</ion-content>
